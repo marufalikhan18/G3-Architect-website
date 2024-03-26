@@ -7,7 +7,13 @@
   font-style: normal;
 }
 .btn_primary{
-    
+    border-radius: 8px;
+    background: #ff900e;
+    padding: 20px 25px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: 0;
 }
 /* Header style */
 header{
@@ -50,4 +56,29 @@ nav li a{
 }  
 .banner_description{
     color: #727272;
+}
+.banner_image{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
